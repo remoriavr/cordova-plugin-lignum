@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-lignum",
+  "version": "1.0.0",
+  "description": "LIGNUM Controller Plugin for Cordova, compatible with iOS and Android",
+  "cordova": {
+    "id": "cordova-plugin-lignum",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remoriavr/cordova-plugin-lignum.git"
+  },
+  "keywords": [
+    "Cordova"
+    "Remoria VR",
+    "LIGNUM Controller",
+    "iOS",
+    "Android"
+  ],
+  "author": "Matteo Pisani ~ Remoria VR S.r.l. <matteo.pisani@remoriavr.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/remoriavr/cordova-plugin-lignum/issues"
+  },
+  "homepage": "https://github.com/remoriavr/cordova-plugin-lignum"
+}
