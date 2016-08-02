@@ -1,0 +1,101 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"android-package\" value=\"com.megster.cordova.BluetoothSerial\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Insomnia\"><param name=\"android-package\" value=\"nl.xservices.plugins.Insomnia\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.BLUETOOTH_ADMIN\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "ble.uart.vr"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "ble.uart.vr"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "ble.uart.vr"
+        },
+        "cordova-plugin-lignum": {
+            "PACKAGE_NAME": "remoriavr.lignum.cordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-insomnia/www/Insomnia.js",
+            "id": "cordova-plugin-insomnia.Insomnia",
+            "clobbers": [
+                "window.plugins.insomnia"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+            "id": "cordova-plugin-splashscreen.SplashScreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "runs": true
+        },
+        {
+            "file": "plugins/cordova-plugin-lignum/www/bluetoothSerial.js",
+            "id": "cordova-plugin-lignum.bluetoothSerial",
+            "clobbers": [
+                "window.bluetoothSerial"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-insomnia": "4.2.0",
+        "cordova-plugin-splashscreen": "3.1.0",
+        "cordova-plugin-whitelist": "1.0.0",
+        "cordova-plugin-lignum": "1.0.0"
+    }
+}

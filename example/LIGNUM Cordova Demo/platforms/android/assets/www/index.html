@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LIGNUM Controller (Demo)</title>
+    <script src="cordova.js"></script>
+    <script src="aframe.min.js"></script>
+    <script src="aframe-obj-loader-component.min.js"></script>
+    <script src="LIGNUM.js"></script>
+    <style>
+      body,html {
+        margin: 0px;
+        padding: 0px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        background-color: #fff;
+      }
+      p {
+        color: #fff;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 200;
+        line-height: 25%;
+      }
+    </style>
+    <script>
+      document.addEventListener('deviceready', function ()
+      {
+        // when Cordova starts, asks plugin to instantiate LIGNUM object
+        LIGNUM();
+        // you can choose denoised x,y,z coordinates instead of unfiltered ones (default -> denoise = true)
+        denoise = false;
+        // set the interval to call the method 60 times per second
+        setInterval(GET_LIGNUM_DATA,15); // 15? => 1000ms/15 = ~60fps;
+      }, false);
+
+      // get control over LIGNUM Controller data by accessing to its entire status
+      function GET_LIGNUM_DATA()
+      {
+        if(LIGNUM_CONTROLLER_DATA.gesture != '')
+          document.getElementById('gesture').innerText = 'gesture: ' + LIGNUM_CONTROLLER_DATA.gesture;
+        else
+        {
+          document.getElementById('x').innerText = 'x: ' + LIGNUM_CONTROLLER_DATA.x;
+          document.getElementById('y').innerText = 'y: ' + LIGNUM_CONTROLLER_DATA.y;
+          document.getElementById('z').innerText = 'z: ' + LIGNUM_CONTROLLER_DATA.z;
+          document.getElementById('joystick').innerText = 'joystick: ' + LIGNUM_CONTROLLER_DATA.joystick;
+          document.getElementById('buttons').innerText = 'buttons: ' + LIGNUM_CONTROLLER_DATA.buttons;
+          document.getElementById('battery').innerText = 'battery: ' + LIGNUM_CONTROLLER_DATA.battery;
+          if(LIGNUM_CONTROLLER_DATA.x != '0.0' && LIGNUM_CONTROLLER_DATA.y != '0.0' && LIGNUM_CONTROLLER_DATA.z != '0.0')
+          {
+              document.querySelector('a-entity[id=lignum]').setAttribute('rotation', -LIGNUM_CONTROLLER_DATA.y+ ' '+ -LIGNUM_CONTROLLER_DATA.z + ' ' + -LIGNUM_CONTROLLER_DATA.x);
+              if(!denoise)
+                document.querySelector('a-entity[id=lignum]').setAttribute('rotation', -y_denoised+ ' '+ -z_denoised + ' ' + -x_denoised);
+          }
+        }
+      }
+
+      var handleCompassEvent = function(e)
+      {
+        var compassHeading = e.webkitCompassHeading;
+        document.getElementById('compass').innerText='compass: '+compassHeading.toFixed(2)+' deg';
+      };
+      window.addEventListener('deviceorientation', handleCompassEvent, false);
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera id="camera" position="0 0 15"></a-camera>
+      <a-sky color="#000"></a-sky>
+      <a-entity id="lignum" obj-loader="src: url(./LIGNUM.obj);mtl: url(./LIGNUM.mtl);" position="0 0 0" rotation="45 0 0" scale="2.5 2.5 2.5">
+      </a-entity>
+    </a-scene>
+    <div style="position:absolute;margin-left:25px;z-index:999;">
+      <p id="status">status: </p>
+      <p id="compass">compass: </p>
+      <p id="battery">battery: </p>
+      <p id="pps">pps: </p>
+      <p id="gesture">gesture: </p>
+      <p id="x">x: </p>
+      <p id="y">y: </p>
+      <p id="z">z: </p>
+      <p id="joystick">joystick: </p>
+      <p id="buttons">buttons: </p>
+    </div>
+  </body>
+</html>
