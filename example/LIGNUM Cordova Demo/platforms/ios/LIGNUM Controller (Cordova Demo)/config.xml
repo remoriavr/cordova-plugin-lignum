@@ -25,11 +25,11 @@
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
     </feature>
-    <name>LIGNUM (Cordova Demo)</name>
+    <name>LIGNUM Controller (Cordova Demo)</name>
     <description>
-      LIGNUM (Cordova Demo)
+      LIGNUM Controller (Cordova Demo)
     </description>
-    <author email="matteo.pisani.91@gmail.com">
+    <author email="matteo.pisani@remoriavr.com">
       Matteo Pisani
     </author>
     <content src="index.html" />

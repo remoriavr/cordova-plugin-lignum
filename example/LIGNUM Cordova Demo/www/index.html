@@ -40,7 +40,15 @@
       function GET_LIGNUM_DATA()
       {
         if(LIGNUM_CONTROLLER_DATA.gesture != '')
+        {
           document.getElementById('gesture').innerText = 'gesture: ' + LIGNUM_CONTROLLER_DATA.gesture;
+          // wait 750 ms before clean gesture variable
+          setTimeout(function()
+          {
+            LIGNUM_CONTROLLER_DATA.gesture = '';
+            document.getElementById('gesture').innerText = 'gesture: ';
+          },750);
+        }
         else
         {
           document.getElementById('x').innerText = 'x: ' + LIGNUM_CONTROLLER_DATA.x;

@@ -42,10 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "LIGNUM (Cordova Demo)/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "LIGNUM Controller (Cordova Demo)/Images.xcassets"; sourceTree = SOURCE_ROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* LIGNUM (Cordova Demo).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LIGNUM (Cordova Demo).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* LIGNUM Controller (Cordova Demo).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LIGNUM Controller (Cordova Demo).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -55,11 +55,11 @@
 		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = cordova/build-debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = cordova/build-release.xcconfig; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
-		32CA4F630368D1EE00C91783 /* LIGNUM (Cordova Demo)-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LIGNUM (Cordova Demo)-Prefix.pch"; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* LIGNUM (Cordova Demo)-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LIGNUM (Cordova Demo)-Info.plist"; path = "LIGNUM (Cordova Demo)/LIGNUM (Cordova Demo)-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* LIGNUM Controller (Cordova Demo)-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LIGNUM Controller (Cordova Demo)-Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LIGNUM Controller (Cordova Demo)-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LIGNUM Controller (Cordova Demo)-Info.plist"; path = "LIGNUM Controller (Cordova Demo)/LIGNUM Controller (Cordova Demo)-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "LIGNUM (Cordova Demo)/config.xml"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "LIGNUM Controller (Cordova Demo)/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		E5DB7E9D0A73463D8C507A94 /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		F70FB2C7AC0D479C8F4A155A /* Insomnia.m */ = {isa = PBXFileReference; name = "Insomnia.m"; path = "cordova-plugin-insomnia/Insomnia.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
@@ -100,13 +100,13 @@
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
 			);
 			name = Classes;
-			path = "LIGNUM (Cordova Demo)/Classes";
+			path = "LIGNUM Controller (Cordova Demo)/Classes";
 			sourceTree = SOURCE_ROOT;
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* LIGNUM (Cordova Demo).app */,
+				1D6058910D05DD3D006BFB54 /* LIGNUM Controller (Cordova Demo).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,12 +131,12 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* LIGNUM (Cordova Demo)-Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* LIGNUM Controller (Cordova Demo)-Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
 			);
 			name = "Other Sources";
-			path = "LIGNUM (Cordova Demo)";
+			path = "LIGNUM Controller (Cordova Demo)";
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -144,10 +144,10 @@
 			children = (
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
-				8D1107310486CEB800E47090 /* LIGNUM (Cordova Demo)-Info.plist */,
+				8D1107310486CEB800E47090 /* LIGNUM Controller (Cordova Demo)-Info.plist */,
 			);
 			name = Resources;
-			path = "LIGNUM (Cordova Demo)/Resources";
+			path = "LIGNUM Controller (Cordova Demo)/Resources";
 			sourceTree = "<group>";
 		};
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
@@ -194,7 +194,7 @@
 				CBE47EDE075A4786BEA20234 /* BLEDefines.h */,
 			);
 			name = Plugins;
-			path = "LIGNUM (Cordova Demo)/Plugins";
+			path = "LIGNUM Controller (Cordova Demo)/Plugins";
 			sourceTree = SOURCE_ROOT;
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
@@ -209,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* LIGNUM (Cordova Demo) */ = {
+		1D6058900D05DD3D006BFB54 /* LIGNUM Controller (Cordova Demo) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LIGNUM (Cordova Demo)" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LIGNUM Controller (Cordova Demo)" */;
 			buildPhases = (
 				304B58A110DAC018002A0835 /* Copy www directory */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -223,9 +223,9 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "LIGNUM (Cordova Demo)";
-			productName = "LIGNUM (Cordova Demo)";
-			productReference = 1D6058910D05DD3D006BFB54 /* LIGNUM (Cordova Demo).app */;
+			name = "LIGNUM Controller (Cordova Demo)";
+			productName = "LIGNUM Controller (Cordova Demo)";
+			productReference = 1D6058910D05DD3D006BFB54 /* LIGNUM Controller (Cordova Demo).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* LIGNUM (Cordova Demo) */,
+				1D6058900D05DD3D006BFB54 /* LIGNUM Controller (Cordova Demo) */,
 			);
 		};
 /* End PBXProject section */
@@ -336,12 +336,12 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LIGNUM (Cordova Demo)/LIGNUM (Cordova Demo)-Prefix.pch";
+				GCC_PREFIX_HEADER = "LIGNUM Controller (Cordova Demo)/LIGNUM Controller (Cordova Demo)-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "LIGNUM (Cordova Demo)/LIGNUM (Cordova Demo)-Info.plist";
+				INFOPLIST_FILE = "LIGNUM Controller (Cordova Demo)/LIGNUM Controller (Cordova Demo)-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_NAME = "LIGNUM (Cordova Demo)";
+				PRODUCT_NAME = "LIGNUM Controller (Cordova Demo)";
 			};
 			name = Debug;
 		};
@@ -356,11 +356,11 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LIGNUM (Cordova Demo)/LIGNUM (Cordova Demo)-Prefix.pch";
+				GCC_PREFIX_HEADER = "LIGNUM Controller (Cordova Demo)/LIGNUM Controller (Cordova Demo)-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
-				INFOPLIST_FILE = "LIGNUM (Cordova Demo)/LIGNUM (Cordova Demo)-Info.plist";
-				PRODUCT_NAME = "LIGNUM (Cordova Demo)";
+				INFOPLIST_FILE = "LIGNUM Controller (Cordova Demo)/LIGNUM Controller (Cordova Demo)-Info.plist";
+				PRODUCT_NAME = "LIGNUM Controller (Cordova Demo)";
 			};
 			name = Release;
 		};
@@ -387,7 +387,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_NAME = "LIGNUM (Cordova Demo)";
+				PRODUCT_NAME = "LIGNUM Controller (Cordova Demo)";
 			};
 			name = Debug;
 		};
@@ -413,14 +413,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_NAME = "LIGNUM (Cordova Demo)";
+				PRODUCT_NAME = "LIGNUM Controller (Cordova Demo)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LIGNUM (Cordova Demo)" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LIGNUM Controller (Cordova Demo)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
